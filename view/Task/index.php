@@ -3,9 +3,9 @@
 	<table>
 		<a href="<?= URL ?>List/index"><button class="addbutton">Back to List</button></a>
 			<tr>
-				<td class="top"> <a href="<?= URL ?>List/getTaskByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&table=ToDo"> ToDo </a></td>
-				<td class="top"><a href="<?= URL ?>List/getTaskByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&table=Priority"> Priority </a></td>
-				<td class="top"><a href="<?= URL ?>List/getTaskByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&table=End Date"> End Date </a></td>
+				<td class="top"> <a href="<?= URL ?>List/getTasksByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&collum=ToDo"> ToDo </a></td>
+				<td class="top"><a href="<?= URL ?>List/getTasksByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&collum=Priority"> Priority </a></td>
+				<td class="top"><a href="<?= URL ?>List/getTasksByListID/<?= $list['list_id'] ?>?sort=<?= $sort ?>&collum=End Date"> End Date </a></td>
 				<td class="top">options</td>
 			</tr>
 			<?php foreach ($tasks as $task) {  ?>

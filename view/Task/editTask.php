@@ -12,6 +12,6 @@
 			<input type="hidden" value="<?= $task['list_id'] ?>" name="list_id">
 			<input type="submit" value="submit" id="submitcreate">
 		</form>
-		<a href="<?= URL ?>List/getTaskByListID/<?= $task['list_id'] ?>"><button class="createbutton">Back</button></a> 	
+		<a href="<?= URL ?>Task/index/<?= $task['list_id'] ?>"><button class="createbutton">Back</button></a> 	
 	</section>
 </main>

@@ -8,7 +8,7 @@
 
 		<?php foreach ($lists as $list) { ?>
 			<tr>
-				<td class="bottom"><a href="<?= URL ?>list/getTaskByListID/<?= $list['list_id']; ?>"><?= $list['list_name']; ?></a></td>
+				<td class="bottom"><a href="<?= URL ?>list/getTasksByListID/<?= $list['list_id']; ?>"><?= $list['list_name']; ?></a></td>
 			 
 				<td class="bottom"><a href="<?= URL ?>List/editList/<?= $list['list_id']; ?>"><button class="indexbutton">Edit</button></a> </td>
 				<td class="bottom"><a href="<?= URL ?>List/deleteList/<?= $list['list_id']; ?>"><button class="indexbutton">Delete</button></a></td>

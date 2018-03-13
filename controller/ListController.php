@@ -8,22 +8,22 @@ function index() {
 	));
 }
 
-function getTaskByListID($id){
+function getTasksByListID($id){
 
-	if (isset($_GET["table"])) {
+	if (isset($_GET["collum"])) {
 
-	if ($_GET["table"] == "ToDo"){
-		$table = "todo";
+	if ($_GET["collum"] == "ToDo"){
+		$collum = "todo";
 	}
-	if($_GET["table"] == "Priority"){
-		$table = "priority";
+	if($_GET["collum"] == "Priority"){
+		$collum = "priority";
 	}
-	if($_GET["table"] == "End Date"){
-		$table = "end_date";
+	if($_GET["collum"] == "End Date"){
+		$collum = "end_date";
 	}
 
 	}else{
-		$table = "end_date";
+		$collum = "end_date";
 	}
 
 
@@ -40,7 +40,7 @@ function getTaskByListID($id){
 	}
 
 	render("Task/Index", array("list" => getList($id),
-							   "tasks" => getAllTasks($id, $sort, $table),
+							   "tasks" => getAllTasks($id, $sort, $collum),
 							   "sort" => $sort == "ASC" ? "DESC" : "ASC"
 								));
 }

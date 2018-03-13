@@ -12,7 +12,7 @@
 
 			<input type="submit" value="submit" id="submitcreate">
 		</form>
-		<a href="<?= URL ?>List/getTaskByListID/<?= $listID ?>"><button class="createbutton">Back</button></a> 	
+		<a href="<?= URL ?>Task/index/<?= $listID ?>"><button class="createbutton">Back</button></a> 	
 	</section>
 
 </main>

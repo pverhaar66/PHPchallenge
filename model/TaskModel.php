@@ -1,10 +1,10 @@
 <?php
 
-function getAllTasks($id, $sort, $table) {
+function getAllTasks($id, $sort, $collum) {
 	$db = openDatabaseConnection();
 
 	$sql = "SELECT * FROM tasks WHERE list_id = :list_id 
-	ORDER BY ". $table ." ". $sort;
+	ORDER BY ". $collum ." ". $sort;
 	$query = $db->prepare($sql);
 	$query->execute(array(":list_id" => $id));
 
